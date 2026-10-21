@@ -30,12 +30,14 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
 
 # typescript
 next-env.d.ts
+*.tsbuildinfo
 /dist/
 /.wrangler/
 # Checkout-local execution profile and tool state; never publish them.
@@ -45,3 +47,10 @@ next-env.d.ts
 /outputs/
 /work/
 /*.tar.gz
+
+# Cloudflare Worker secrets and local vars. Never commit real credentials.
+.dev.vars
+.dev.vars.*
+wrangler.toml
+wrangler.json
+wrangler.jsonc
