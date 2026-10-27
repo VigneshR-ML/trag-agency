@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/run-framework.mjs build",
+  "buildCommand": "pnpm run build",
   "outputDirectory": ".next",
-  "framework": null
+  "framework": "nextjs"
 }
